@@ -14,7 +14,7 @@ Parameters:
 
 Resources:
 
-  MyEC2GitHub:
+  MyEC2GitHubPRWilder:
     Type: AWS::EC2::Instance
     Properties:
       AvailabilityZone: us-east-1a
@@ -55,4 +55,4 @@ Resources:
 Outputs:
 
   InstanceId:
-    Value: !Ref MyEC2GitHub
+    Value: !Ref MyEC2GitHubPRWilder
