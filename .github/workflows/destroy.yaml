@@ -21,12 +21,12 @@ jobs:
       - name: Delete CloudFormation Stack
         run: |
           aws cloudformation delete-stack \
-            --stack-name ec2-stack-GitHub
+            --stack-name ec2-stack-GitHub-PR-Wilder
 
       - name: Wait for stack deletion
         run: |
           aws cloudformation wait stack-delete-complete \
-            --stack-name ec2-stack-GitHub
+            --stack-name ec2-stack-GitHub-PR-Wilder
 
       - name: Confirm deletion
-        run: echo "Stack ec2-stack-GitHub deleted successfully"
+        run: echo "Stack ec2-stack-GitHub-PR-Wilder deleted successfully"
